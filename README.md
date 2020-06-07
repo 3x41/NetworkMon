@@ -15,7 +15,7 @@ This runs on a PC that checks the config file to see what servers are up or down
 The "Main"
 This is a viewer that shows the results of the poller results in a clear way. You can also see the logs and add entries in the config.
 
-###About the Configuration File
+### About the Configuration File
 
 This is a text file that lives in the "Config" folder in a file called "config.txt".
 
@@ -33,6 +33,7 @@ This tells the poller and main to Port scan the IP/Hostname and then its followe
 Here is an example of a config file:
 
 '''
+
 :Switches
 @127.0.0.1
 
@@ -41,6 +42,7 @@ Here is an example of a config file:
 
 :test
 @192.168.1.254
+
 '''
 
 
