@@ -1,0 +1,8 @@
+:Switches
+127.0.0.1
+
+:Linux Server
+>127.0.0.1:80
+
+
+:test
