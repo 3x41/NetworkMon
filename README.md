@@ -32,7 +32,7 @@ This tells the poller and main to Port scan the IP/Hostname and then its followe
 
 Here is an example of a config file:
 
-'''
+```
 
 :Switches
 @127.0.0.1
@@ -43,7 +43,7 @@ Here is an example of a config file:
 :test
 @192.168.1.254
 
-'''
+```
 
 
 More documentation to follow.
