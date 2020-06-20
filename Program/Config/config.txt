@@ -7,9 +7,6 @@
 :test
 @192.168.1.254
 
-
-:
-:bb
-:hg
-@n
-:ff
+:fff
+:fdfdfsdfsd
+@1.1.1.1

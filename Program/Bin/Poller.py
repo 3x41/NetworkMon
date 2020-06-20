@@ -5,22 +5,22 @@ import time
 import datetime
 
 # Configuration Settings:
-HostOS = "Windows" # "Linux"
-RefreshDelay = 60 # in Seconds. 1min = 60, 5mins = , 10mins, 15mins, 20mins
+HostOS = "Windows" # "Linux" currently untested for linux..
+RefreshDelay = 60 #300 # in Seconds. 1min = 60, 5mins = 300, 10mins =600, 15mins=900, 20mins=1200
 
 
 #More Config, Only change if you know what you are doing.
-OutputFile = "Logs/Results.txt"
-ConfigFile = "Config/config.txt"
-Debugging = True #For testing True, Live set to False
+OutputFile = "../Logs/Results.txt"
+ConfigFile = "../Config/config.txt"
+Debugging = False #For testing True, Live set to False
 
 Todays_Date = datetime.date.today()
-LogFile = "Logs/" + str(Todays_Date) + ".txt"
+LogFile = "../Logs/" + str(Todays_Date) + ".txt"
 cnt = 0
 
 def Welcome():
     print ("*** Welcome to the Poller ***")
-    print (" **       Version 0.2     **")
+    print (" **       Version 0.3     **")
     print ("")
     
 def CleanFile():
@@ -56,7 +56,7 @@ def PortTest(ip,port):
 def Ping(hostname):
     PingResult = "DOWN"
     if HostOS == "Windows":
-        response = os.system("ping -n 1 " + hostname)  # Windows Only command
+        response = os.system("ping -n 4 " + hostname)  # Windows Only command
     else:
         response = os.system("ping -c 1 " + hostname)  # Unix/Linux Only command
 
@@ -95,7 +95,7 @@ def ReadConfigFile():
                     print("Write to Error Log, date and time")
                     WriteLogFile(ip + "," + PortTestResult)
                 #AddPortScan(ip,port)
-                Result = ip + "," + PortTestResult
+                Result = ">" + ip + "," + PortTestResult
                 print (Result)
                 #save to file....
                 WriteFile(Result)
@@ -113,7 +113,7 @@ def ReadConfigFile():
                     print("Write to Error Log, date and time")
                     WriteLogFile(line + "," + PingTest)
                 #CurrentDateTime = str(datetime.datetime.now())
-                Result = line + "," + PingTest
+                Result = "@" + line + "," + PingTest
                 print (Result)
                 #save to file....
                 WriteFile(Result)
@@ -131,5 +131,7 @@ if Debugging == False:
     CleanFile()
     while 1:
         ReadConfigFile()
+        print ("--------- Waiting (Refresh Delay) --------")
         time.sleep(RefreshDelay)
+        CleanFile()
 

@@ -1,0 +1,127 @@
+port,127.0.0.1, Port 80 is Closed
+port,127.0.0.1, Port 80 is Closed,,2018-07-23 16:40:31.965000
+port,127.0.0.1, Port 80 is Closed,2018-07-23 16:41:40.607000
+port,127.0.0.1, Port 80 is Closed,2018-07-23 16:44:09.550000
+port,127.0.0.1, Port 80 is Closed,2018-07-31 11:15:02.088349
+2018-08-01 16:10:32.764000 ~ Closed Port Detected ~ 127.0.0.1 Port 80
+ 
+port,127.0.0.1, Port 80 is Closed,2020-06-06 22:43:54.105000
+2020-06-06 22:46:27.960372 ~ Closed Port Detected ~ 127.0.0.1 Port 80
+ 
+2020-06-06 22:52:07.130376 ~ Closed Port Detected ~ 127.0.0.1 Port 80
+ 
+port,127.0.0.1, Port 80 is Closed,2020-06-06 22:53:46.060139
+2020-06-06 23:00:44.760272 ~ Closed Port Detected ~ 127.0.0.1 Port 80
+ 
+2020-06-06 23:02:37.311826 ~ Closed Port Detected ~ 127.0.0.1 Port 80
+ 
+2020-06-06 23:04:20.444063 ~ Closed Port Detected ~ 127.0.0.1 Port 80
+ 
+2020-06-06 23:06:30.741677 ~ Closed Port Detected ~ 127.0.0.1 Port 80
+ 
+2020-06-06 23:07:19.683245 ~ Closed Port Detected ~ 127.0.0.1 Port 80
+ 
+2020-06-06 23:07:35.538879 ~ Closed Port Detected ~ 127.0.0.1 Port 80
+ 
+2020-06-06 23:08:13.123734 ~ Closed Port Detected ~ 127.0.0.1 Port 80
+ 
+2020-06-06 23:09:36.135689 ~ Closed Port Detected ~ 127.0.0.1 Port 80
+ 
+2020-06-06 23:10:07.878180 ~ Closed Port Detected ~ 127.0.0.1 Port 80
+ 
+2020-06-06 23:11:12.441288 ~ Closed Port Detected ~ 127.0.0.1 Port 80
+ 
+2020-06-06 23:13:21.098889 ~ Closed Port Detected ~ 127.0.0.1 Port 80
+ 
+2020-06-06 23:17:21.824127 ~ Closed Port Detected ~ 127.0.0.1 Port 80
+ 
+2020-06-06 23:18:28.574167 ~ Closed Port Detected ~ 127.0.0.1 Port 80
+ 
+2020-06-06 23:22:23.129290 ~ No Ping Detected ~ @hostname Test,127.0.0.1,, 
+2020-06-06 23:22:33.330006 ~ No Ping Detected ~ @hostname Test,127.0.0.1,, 
+2020-06-06 23:23:03.713456 ~ No Ping Detected ~ @hostname Test,127.0.0.1, 
+2020-06-06 23:23:21.646720 ~ No Ping Detected ~ @hostname Test,127.0.0.1 
+2020-06-06 23:24:26.788204 ~ Closed Port Detected ~ 127.0.0.1 Port 80
+ 
+127.0.0.1, Port 80 is Closed,2020-06-06 23:47:41.497087
+127.0.0.1, Port 80 is Closed,2020-06-06 23:53:26.728088
+127.0.0.1, Port 80 is Closed,2020-06-06 23:54:15.685302
+2020-06-06 23:55:09.375912 ~ Closed Port Detected ~ 127.0.0.1 Port 80
+ 
+2020-06-06 23:55:09.406983 ~ No Ping Detected ~ @192.168.1.254 
+2020-06-06 23:55:57.473932 ~ Closed Port Detected ~ 127.0.0.1 Port 80
+ 
+2020-06-06 23:55:57.504974 ~ No Ping Detected ~ @192.168.1.254 
+2020-06-06 23:55:57.551878 ~ No Ping Detected ~ 11111 
+127.0.0.1, Port 80 is Closed,2020-06-06 23:57:21.798215
+2020-06-06 23:59:49.779015 ~ Closed Port Detected ~ 127.0.0.1 Port 80
+ 
+2020-06-06 23:59:49.810084 ~ No Ping Detected ~ @192.168.1.254 
+2020-06-06 23:59:49.841324 ~ No Ping Detected ~ 11111 
+2020-06-07 00:00:48.922009 ~ No Ping Detected ~ @127.0.0.1 
+2020-06-07 00:00:50.984217 ~ Closed Port Detected ~ 127.0.0.1 Port 80
+ 
+2020-06-07 00:00:51.015278 ~ No Ping Detected ~ @192.168.1.254 
+2020-06-07 00:05:50.226076 ~ Closed Port Detected ~ 127.0.0.1 Port 80
+ 
+2020-06-07 00:06:22.249780 ~ Closed Port Detected ~ 127.0.0.1 Port 80
+ 
+2020-06-07 00:07:26.875235 ~ Closed Port Detected ~ 127.0.0.1 Port 80 
+2020-06-07 00:09:32.945732 ~ Closed Port Detected ~ 127.0.0.1 Port 80 
+2020-06-07 00:10:06.085030 ~ Closed Port Detected ~ 127.0.0.1 Port 80 
+2020-06-07 00:10:31.079107 ~ Closed Port Detected ~ 127.0.0.1 Port 80 
+2020-06-07 00:12:21.066453 ~ Closed Port Detected ~ 127.0.0.1 Port 80 
+127.0.0.1, Port 80 is Closed,2020-06-07 00:12:44.155549
+2020-06-07 00:15:03.098936 ~ Closed Port Detected ~ 127.0.0.1 Port 80 
+2020-06-07 00:16:50.392817 ~ Closed Port Detected ~ 127.0.0.1 Port 80 
+2020-06-07 00:40:23.832212 ~ Closed Port Detected ~ 127.0.0.1 Port 80 
+2020-06-07 00:44:45.379487 ~ Closed Port Detected ~ 127.0.0.1 Port 80 
+2020-06-07 00:44:54.589797 ~ Closed Port Detected ~ 127.0.0.1 Port 80 
+2020-06-07 00:45:57.228319 ~ Closed Port Detected ~ 127.0.0.1 Port 80 
+2020-06-07 00:46:02.257797 ~ Closed Port Detected ~ 127.0.0.1 Port 80 
+2020-06-07 00:46:48.111705 ~ Closed Port Detected ~ 127.0.0.1 Port 80 
+2020-06-07 00:50:43.884886 ~ Closed Port Detected ~ 127.0.0.1 Port 80 
+2020-06-07 00:50:46.252466 ~ No Ping Detected ~ n 
+2020-06-07 00:50:51.100224 ~ Closed Port Detected ~ 127.0.0.1 Port 80 
+2020-06-07 00:50:53.467114 ~ No Ping Detected ~ n 
+2020-06-07 00:52:36.297302 ~ Closed Port Detected ~ 127.0.0.1 Port 80 
+2020-06-07 00:52:38.656113 ~ No Ping Detected ~ n 
+2020-06-07 01:19:09.734931 ~ Closed Port Detected ~ 127.0.0.1 Port 80 
+2020-06-07 01:19:12.107391 ~ No Ping Detected ~ n 
+2020-06-07 21:52:05.570459 ~ Closed Port Detected ~ 127.0.0.1 Port 80 
+2020-06-07 21:52:07.929100 ~ No Ping Detected ~ n 
+2020-06-07 22:00:22.494483 ~ Closed Port Detected ~ 127.0.0.1 Port 80 
+2020-06-07 22:00:24.854292 ~ No Ping Detected ~ n 
+2020-06-07 22:02:38.447696 ~ Closed Port Detected ~ 127.0.0.1 Port 80 
+2020-06-07 22:02:40.807378 ~ No Ping Detected ~ n 
+2020-06-07 22:06:34.164894 ~ Closed Port Detected ~ 127.0.0.1 Port 80 
+2020-06-07 22:06:36.532832 ~ No Ping Detected ~ n 
+2020-06-07 22:06:56.624532 ~ Closed Port Detected ~ 127.0.0.1 Port 80 
+2020-06-07 22:06:59.025607 ~ No Ping Detected ~ n 
+2020-06-07 22:10:01.023973 ~ Closed Port Detected ~ 127.0.0.1 Port 80 
+2020-06-07 22:10:03.427491 ~ No Ping Detected ~ n 
+2020-06-07 22:16:10.451390 ~ Closed Port Detected ~ 127.0.0.1 Port 80 
+2020-06-07 22:16:12.818901 ~ No Ping Detected ~ n 
+2020-06-17 22:50:31.762000 ~ Closed Port Detected ~ 127.0.0.1 Port 80 
+2020-06-17 22:50:35.356822 ~ No Ping Detected ~ 192.168.1.254 
+2020-06-17 22:50:37.678909 ~ No Ping Detected ~ n 
+2020-06-17 22:51:23.706012 ~ Closed Port Detected ~ 127.0.0.1 Port 80 
+2020-06-17 22:51:26.070910 ~ No Ping Detected ~ n 
+2020-06-17 22:54:39.392617 ~ Closed Port Detected ~ 127.0.0.1 Port 80 
+2020-06-17 22:54:41.812239 ~ No Ping Detected ~ n 
+2020-06-17 22:56:45.650443 ~ Closed Port Detected ~ 127.0.0.1 Port 80 
+2020-06-17 22:56:49.409324 ~ No Ping Detected ~ 192.168.1.254 
+2020-06-17 22:56:51.765077 ~ No Ping Detected ~ n 
+2020-06-20 01:09:07.803314 ~ Closed Port Detected ~ 127.0.0.1 Port 80 
+2020-06-20 01:09:10.191135 ~ No Ping Detected ~ n 
+2020-06-20 01:23:43.473159 ~ Closed Port Detected ~ 127.0.0.1 Port 80 
+2020-06-20 01:23:47.464513 ~ No Ping Detected ~ 192.168.1.254 
+2020-06-20 01:23:49.814130 ~ No Ping Detected ~ n 
+2020-06-20 01:28:33.062806 ~ Closed Port Detected ~ 127.0.0.1 Port 80 
+2020-06-20 01:28:35.438933 ~ No Ping Detected ~ n 
+2020-06-20 01:33:11.878582 ~ Closed Port Detected ~ 127.0.0.1 Port 80 
+2020-06-20 01:33:15.452250 ~ No Ping Detected ~ 192.168.1.254 
+2020-06-20 01:36:04.425163 ~ Closed Port Detected ~ 127.0.0.1 Port 80 
+2020-06-20 01:36:08.451668 ~ No Ping Detected ~ 192.168.1.254 
+2020-06-20 01:48:03.790555 ~ Closed Port Detected ~ 127.0.0.1 Port 80 
+2020-06-20 01:48:07.445946 ~ No Ping Detected ~ 192.168.1.254 

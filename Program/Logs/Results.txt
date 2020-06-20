@@ -1,11 +1,9 @@
 :Switches
-127.0.0.1,UP
+@127.0.0.1,UP
 :Linux Server
-127.0.0.1, Port 80 is Closed
+>127.0.0.1, Port 80 is Closed
 :test
-192.168.1.254,UP
-:
-:bb
-:hg
-n,DOWN
-:ff
+@192.168.1.254,UP
+:fff
+:fdfdfsdfsd
+@1.1.1.1,UP
