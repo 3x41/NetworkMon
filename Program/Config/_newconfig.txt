@@ -1,6 +1,0 @@
-:Switches
-@hostname Test,127.0.0.1,,
-:Linux Server
->port,127.0.0.1,80,
-
-:Tets

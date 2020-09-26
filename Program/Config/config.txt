@@ -1,12 +1,12 @@
-:Switches
-@127.0.0.1
+:This is a Header
+@127.0.0.1{name
 
-:Linux Server
->127.0.0.1:80
+:Port Check
+>127.0.0.1{80{name of server
 
-:test
-@192.168.1.254
+:Ping Check
+@192.168.1.254{anothername
 
-:fff
-:fdfdfsdfsd
-@1.1.1.1
+:Headers are not needed.
+:Headers are not needed.
+:Headers are not needed.

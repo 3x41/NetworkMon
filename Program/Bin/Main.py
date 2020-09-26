@@ -12,7 +12,7 @@ import threading
 
 #My custom py files imported
 
-import LogFileView
+#import LogFileView
 import Add_Title
 from About import About_Window #New class method, working 
 global LabelCounter
@@ -42,11 +42,13 @@ Status_Passed = 0
 
 #Set window up for the program
 Window = Tk()
-Window.title("Network Monitor (Alpha)")
+Window.title("Network Monitor GUI (Alpha)")
 Window.geometry(WindowSizeWidth+"x"+WindowSizeHeight)
 Window.iconbitmap("../Images/network.ico")
 Window.resizable(0,1) #Remove Maximize button, only allow y resize
 
+
+    
 def AddSubBlank(Title):
     global LabelCounter
     LabelCounter = LabelCounter + 1
@@ -68,12 +70,12 @@ def AddPortScan(ip,port):
     Status_Total = Status_Total + 1
     if "Closed" not in port:
         if View_Results == 0 or View_Results == 2:
-            w[LabelCounter] = Label(frame, text=ip + " " + port + " ", bg="green", fg="black")
+            w[LabelCounter] = Label(frame, text="‼  " + ip + " " + port + " ", bg="green", fg="black")
             w[LabelCounter].pack(fill=X)
             Status_Passed = Status_Passed + 1
     else:
         if View_Results == 0 or View_Results == 1:
-            w[LabelCounter] = Label(frame, text=ip + " " + port + " ", bg="red", fg="white")
+            w[LabelCounter] = Label(frame, text="‼  " + ip + " " + port + " ", bg="red", fg="white")
             w[LabelCounter].pack(fill=X)
             Status_Failed = Status_Failed + 1
 
@@ -84,12 +86,12 @@ def AddToWindow(ipaddr,ipstats):
     Status_Total = Status_Total + 1
     if "DOWN" not in ipstats:
         if View_Results == 0 or View_Results == 2:
-            w[LabelCounter] = Label(frame, text=ipaddr + " is " + ipstats, bg="green", fg="black")
+            w[LabelCounter] = Label(frame, text="√  " + ipaddr + "", bg="green", fg="black")
             w[LabelCounter].pack(fill=X)
             Status_Passed = Status_Passed + 1
     else:
         if View_Results == 0 or View_Results == 1:
-            w[LabelCounter] = Label(frame, text=ipaddr + " is " + ipstats, bg="red", fg="white")
+            w[LabelCounter] = Label(frame, text="‼  " + ipaddr + "", bg="red", fg="white")
             w[LabelCounter].pack(fill=X)
             Status_Failed = Status_Failed + 1
 
@@ -99,8 +101,12 @@ def ThreadRefresh():
         time.sleep(60)              #Thread Sleep, may need adjusting if many file entries.
         print("Thread Ran")
         if AutoRefresh == True:
-            ClearLabels()
-            ReadConfigFile()
+            if os.path.exists("../Config/Lock.File"):
+                #Can not refresh as the file is being updated.
+                print("Lock Found")
+            else:
+                ClearLabels()
+                ReadConfigFile()
     print("Thread Stopped")
 
 def BeginThread(event=None):
@@ -137,7 +143,7 @@ def ClearLabels():
 #W_Button_1.pack()
 
 lbl_Status = Label(Window, text="---", font="-size 15", bg="#FB9214")
-lbl_Status.pack()
+lbl_Status.pack(pady=10)
 
 
 
@@ -160,6 +166,15 @@ canvas.bind('<Configure>', on_configure)
 frame = Frame(canvas, background="#EEEEEE")
 canvas.create_window((10,10), window=frame, anchor='nw')
 
+def mouse_wheel(event):
+    # respond to Linux or Windows wheel event
+    if event.num == 5 or event.delta == -120:
+        #print("Mouse Wheel Down")
+        canvas.yview_moveto( 1 )
+    if event.num == 4 or event.delta == 120:
+        #print("Mouse Wheel Up")
+        canvas.yview_moveto( 0 )
+    
 def ReadConfigFile():
     filepath = '../Logs/Results.txt'
     #global LabelArrayMax
@@ -202,7 +217,9 @@ ReadConfigFile()
 
 def ShowLogWindow():
     print("LogFile Click")
-    LogFileView.CreateLogFileWindow()
+    #import LogFileView
+    os.system("python LogFileView.py")
+    #LogFileView.CreateLogFileWindow()
 
 def AddTitle():
     Title_Window = Add_Title.Add_Title_Main_WindowFun()
@@ -223,7 +240,7 @@ def AboutWindow():
     About_Window()
 
 def EditConfig():
-    os.system("notepad.exe ../Config/config.txt")
+    os.system("start notepad.exe ../Config/config.txt")
     #windows only at the mo.
 
 def View_All():
@@ -272,8 +289,8 @@ logmenu.add_command(label="Show Log File", command=ShowLogWindow)
 Checksmenu = Menu(menu, tearoff=0)
 menu.add_cascade(label="Configuration", menu=Checksmenu)
 Checksmenu.add_command(label="Add Header", command=AddTitle)
-Checksmenu.add_command(label="Add Ping Check", command=AddPing)
-Checksmenu.add_command(label="Add Port Check", command=AddPort)
+#Checksmenu.add_command(label="Add Ping Check", command=AddPing)
+#Checksmenu.add_command(label="Add Port Check", command=AddPort)
 Checksmenu.add_separator()
 Checksmenu.add_command(label="Manual Edit Config", command=EditConfig)
 
@@ -284,6 +301,17 @@ viewmenu.add_command(label="Show Only Failed (Red)", command=View_Failed)
 viewmenu.add_command(label="Show Only Passed (Green)", command=View_Passed)
 viewmenu.add_separator()
 viewmenu.add_checkbutton(label="Auto Refresh", command=View_Auto) #Default is OFF (FALSE)
+
+Refreshmenu = Menu(menu, tearoff=0)
+menu.add_cascade(label="Refresh", command=View_All)
+#menu.add_cascade(label="Refresh", menu=ReFreshmenu)
+#Refreshmenu.add_command(label="Show All", command=View_All)
+
+# with Windows OS
+Window.bind("<MouseWheel>", mouse_wheel)
+# with Linux OS
+#root.bind("<Button-4>", mouse_wheel)
+#root.bind("<Button-5>", mouse_wheel)
 
 
 # Main window loop

@@ -1,9 +1,9 @@
-:Switches
-@127.0.0.1,UP
-:Linux Server
->127.0.0.1, Port 80 is Closed
-:test
-@192.168.1.254,UP
-:fff
-:fdfdfsdfsd
-@1.1.1.1,UP
+:This is a Header
+@name,UP
+:Port Check
+>name of server, Port 80 is Closed
+:Ping Check
+@anothername,UP
+:Headers are not needed.
+:Headers are not needed.
+:Headers are not needed.
